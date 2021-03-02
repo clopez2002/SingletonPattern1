@@ -16,6 +16,14 @@ public class SingletonTest {
 
 //-------------------------------------------------------------------
 
+    @Test
+    public void test02WhenSeconfInstanceOfSingletonIsRequieredTheOnlyOneIsDelivered () {
+
+        Singleton instance1 = Singleton.getInstance();
+        Singleton instance2 = Singleton.getInstance();
+        Assert.assertEquals(instance1,instance2);
+    }
+
 //-------------------------------------------------------------------
 
 //-------------------------------------------------------------------
